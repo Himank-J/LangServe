@@ -3,7 +3,9 @@ from loguru import logger # better form of print statements, useful for debuggin
 from schema import invoiceSchema # kor schema
 from kor import create_extraction_chain
 from langserve.schema import CustomUserType # equivalent to pydantic basemodel
-from langchain_google_genai import ChatGoogleGenerativeAI # gemini clint via langchain
+from langchain_google_genai import ChatGoogleGenerativeAI # gemini client via langchain
+
+# know more - https://python.langchain.com/docs/integrations/chat/google_generative_ai/
 
 # this is pydnatic base model that defines what my input is and data type, 
 # allows me to set defualt value as well mandatory/optional parameter,
