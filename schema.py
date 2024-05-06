@@ -1,4 +1,12 @@
-from kor import Object, Text
+'''
+Kor is a thin wrapper on top of LLMs that helps to extract structured data using LLMs.
+To use Kor, specify the schema of what should be extracted and provide some extraction examples.
+
+know more - https://eyurtsev.github.io/kor/tutorial.html
+'''
+
+from kor import Object, Text 
+# data types used in schema are Object (dict) and Text (string)
 
 invoiceSchema = Object(
     id="gpt_data_tagging",
